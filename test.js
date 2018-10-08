@@ -1,7 +1,11 @@
-var links = document.getElementsByTagName("a");
+var a = "apple";
+var b = 5;
 
-for(i = 0; i < links.length; i++){
+if (isNaN(a)){
 
-    links[i].className = "link-" + i;
+    console.log("that int even a number, thickie")
 
+} else{
+
+    console.log("meaning of life is " + (a * b));
 }
