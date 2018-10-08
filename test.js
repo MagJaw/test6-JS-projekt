@@ -1,11 +1,17 @@
-var a = "apple";
-var b = 5;
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Shaun";
+myCar.drive = function(){console.log("now driving");};
 
-if (isNaN(a)){
+myCar.drive();
 
-    console.log("that int even a number, thickie")
+var myCar2 = {
 
-} else{
+    maxSpeed: 70,
+    driver: "Net Ninja",
+    drive: function(speed, time){console.log(speed * time);}
 
-    console.log("meaning of life is " + (a * b));
-}
+};
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
